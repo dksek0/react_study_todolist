@@ -1,0 +1,6 @@
+.link {
+  text-align: center;
+}
+.link button:hover {
+  text-decoration: underline;
+}

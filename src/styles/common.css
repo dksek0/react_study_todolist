@@ -1,0 +1,65 @@
+.sr_only {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  text-align: center;
+  white-space: nowrap;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  opacity: 0;
+}
+
+/* button */
+.btn {
+  display: block;
+  min-width: 180px;
+  border-radius: 18px;
+  padding: 16px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: -0.6px;
+  text-align: center;
+  background-color: rgba(62, 129, 216, 1.0);
+  transition: 0.15s;
+  color: #fff;
+}
+.btn:disabled {
+  background-color: rgba(62, 129, 216, 0.6);
+  pointer-events: none;
+  cursor: default;
+}
+.btn:hover {
+  background-color: rgb(9, 98, 214);
+}
+.btnWrap .btn {
+  margin: 20px auto;
+}
+.inputItem + .btn {
+  margin-left: 20px;
+}
+
+/* input */
+.inputWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.inputItem {
+  display: block;
+  width: 100%;
+}
+.label {
+  width: 120px;
+}
+.input[type="text"],
+.input[type="password"] {
+  width: 100%;
+  padding: 12px 8px;
+}
+
+

@@ -1,0 +1,43 @@
+.header {
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: -0.5px;
+  font-weight: 500;
+}
+.inputWrap form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.todoItem {
+  position: relative;
+  margin: 6px 0;
+  padding: 6px 200px 6px 6px;
+}
+.todoItem form {
+  display: inline-block;
+}
+input[type="text"] {
+  padding: 6px 0 6px 8px;
+  border-bottom: 1px solid #b3b3b3;
+}
+input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+}
+.txt {
+  display: inline-block;
+  padding: 6px 0 6px 8px;
+}
+.todoBtns {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.todoBtns button {
+  border-radius: 4px;
+  margin: 0 3px;
+  padding: 3px;
+  box-shadow: 1px 1px 3px #c1c1c1;
+}
