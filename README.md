@@ -7,4 +7,5 @@
 ## How to run this App
 
 npm install
+
 npm start
