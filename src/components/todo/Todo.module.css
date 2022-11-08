@@ -20,6 +20,8 @@
 }
 input[type="text"] {
   padding: 6px 0 6px 8px;
+}
+.todoItem input[type="text"] {
   border-bottom: 1px solid #b3b3b3;
 }
 input[type="checkbox"]:checked + span {

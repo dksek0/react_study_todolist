@@ -14,6 +14,7 @@ function TodoItem ({todo, getTodos}) {
   const updateHandler = (e) => {
     e.preventDefault();
     setCompleted(!completed);
+    setTodoValue(todo.todo);
   }
   const deleteTodo = async (e) => {
     e.preventDefault();
@@ -24,6 +25,7 @@ function TodoItem ({todo, getTodos}) {
       }
     }
     try {
+      console.log(todo.id, 'todoValue', todoValue)
       await axios.delete(`https://pre-onboarding-selection-task.shop/todos/${todo.id}`, config)
       .then((res) => {
         if (res.status === 204) {
